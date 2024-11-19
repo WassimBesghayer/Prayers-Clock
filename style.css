@@ -1,5 +1,7 @@
 .display {
   display: grid;
+  grid-template: repeat(5, 20%)/repeat(13, 7.7%);
+  grid-area: 1/5/1/13;
   height: 100% !important;
   overflow: hidden;
   background-image: url(./media/images/great-mosque-kairouan.jpg);
@@ -17,6 +19,7 @@
 }
 
 #outer-arch {
+  grid-area: 2/3/3/11;
   position: relative;
   border-radius: 50%;
   background-color: red;
@@ -29,6 +32,7 @@
 }
 
 #inner-arch {
+  grid-area: 3/4/3/11;
   position: absolute;
   border-radius: 50%;
   background-color: blue;
@@ -109,4 +113,8 @@
 
 marquee span {
   margin-right: 60px;
+}
+
+.months {
+  grid-area: 4/5/1/13;
 }/*# sourceMappingURL=style.css.map */

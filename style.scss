@@ -1,6 +1,11 @@
-.display{
+@media screen {
+    
+}
+
+.display{   // definig workspace
     display: grid;
-        // grid-area: 4fr / 2fr;
+        grid-template: repeat(5, 20%) / repeat(13, 7.7%);
+        grid-area: 1 / 5 / 1 / 13;
     height: 100% !important;
     overflow: hidden;
     background-image:url(./media/images/great-mosque-kairouan.jpg);
@@ -17,7 +22,12 @@
     overflow: hidden;
 }
 
+#clock {
+    grid-area: 1 / 2 / 1 / 3;
+}
+
 #outer-arch {
+    grid-area: 2 / 3 / 3 / 11;  // defining workspace
     position: relative;
     border-radius: 50%;
     background-color: red;
@@ -30,6 +40,7 @@
 }
 
 #inner-arch {
+    grid-area: 3 / 4 / 3 / 11;  // defining workspace
     position: absolute;
     border-radius: 50%;
     background-color: blue;
@@ -106,4 +117,11 @@
 
 marquee span {
     margin-right: 60px;
+}
+
+.months {
+    grid-area: 4 / 5 / 1 / 13;
+    #1, #7, #11, #12 {
+        color: red;
+    }
 }

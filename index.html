@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./media/images/icon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="" type="" href="./main.js">
+    <script src="./main.js"></script>
     <title>Prayers Clock</title>
 </head>
 
@@ -20,12 +21,34 @@
                 <div class="slice"></div>
                 <div id="inner-arch"></div>
             </div>
+
+            <div id="Hijri">تاريخ اليوم :</div>
+                <script>updateHijriClock();</script>
+            <!-- display a clock with local time -->
+            <div id="clock">التوقيت :</div>
+                <script>updateClock();</script>
+
+            <!-- Hijri months -->
+            <div class="months">
+                <p id="1">مُحرَّم</p>
+                <p id="2">صفر</p>
+                <p id="3">ربيع الأول</p>
+                <p id="4">ربيع الآخر</p>
+                <p id="5">جمادى الأولى</p>
+                <p id="6">جمادى الآخرة</p>
+                <p id="7">رجب</p>
+                <p id="8">شعبان</p>
+                <p id="9">رمضان</p>
+                <p id="10">شوَّال</p>
+                <p id="11">ذو القعدة</p>
+                <p id="12">ذو الحجة</p>
+            </div>
         </div>
     </div>
 
 
 
-    <div class="words">
+    <div class="prayers">
         <span id="sobh">صبح</span>
         <span id="dhohr">ظهر</span>
         <span id="asr">عصر</span>
@@ -48,8 +71,8 @@
         <span>سُـبْحانَ اللهِ، والحَمْـدُ لله ، واللهُ أكْـبَر</span>
         <span>لا إلهَ إلاّ اللّهُ وَحْـدَهُ لا شريكَ لهُ، لهُ الملكُ ولهُ الحَمْد، وهُوَ على كُلّ شَيءٍ قَـدير</span>
         <span>اللّهُـمَّ إِنِّـي أَسْأَلُـكَ عِلْمـاً نافِعـاً وَرِزْقـاً طَيِّـباً ، وَعَمَـلاً مُتَقَـبَّلاً</span>
-        <span></span>
-        <span></span>
+        <span>اللَّهُمَّ أَجِرْنِي مِنْ النَّار</span>
+        <span>اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ</span>
     </marquee>
 </footer>
 </html>
