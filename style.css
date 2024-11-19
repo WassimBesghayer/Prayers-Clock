@@ -1,6 +1,9 @@
 .display {
-  height: 100%;
+  display: grid;
+  height: 100% !important;
   overflow: hidden;
+  background-image: url(./media/images/great-mosque-kairouan.jpg);
+  background-size: cover;
 }
 
 #main-frame {
@@ -9,16 +12,16 @@
   align-items: center;
   width: 100%;
   height: 650px; /* Match outer-arch height */
+  padding-top: 200px;
   overflow: hidden;
-  margin-top: 20px;
 }
 
 #outer-arch {
   position: relative;
   border-radius: 50%;
   background-color: red;
-  width: 37.25%;
-  height: 500px;
+  width: 60%;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +33,7 @@
   border-radius: 50%;
   background-color: blue;
   width: 78%;
-  height: 406px;
+  height: 600px;
 }
 
 .slice {
