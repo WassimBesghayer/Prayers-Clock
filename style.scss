@@ -1,11 +1,15 @@
-@media screen {
+// @media screen {
     
-}
+// }
 
+@font-face {
+    font-family: 'Quran-surah-font';
+    src: url(./media/fonts/quran-surah-font/QuranSurah01-w1yO6.ttf);
+}
 .display{   // definig workspace
     display: grid;
         grid-template: repeat(5, 20%) / repeat(13, 7.7%);
-        grid-area: 1 / 5 / 1 / 13;
+        grid-area: 1 / 1 / 6 / 13;  // R-st / C-st / R-end / C-end
     height: 100% !important;
     overflow: hidden;
     background-image:url(./media/images/great-mosque-kairouan.jpg);
@@ -23,7 +27,12 @@
 }
 
 #clock {
-    grid-area: 1 / 2 / 1 / 3;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#Hijri {
+    grid-area: 1 / 12 / 2 / 13;
+    order: 12 !important;   // to enforce its position !
 }
 
 #outer-arch {
@@ -40,7 +49,7 @@
 }
 
 #inner-arch {
-    grid-area: 3 / 4 / 3 / 11;  // defining workspace
+    grid-area: 3 / 4 / 3 / 10;  // defining workspace
     position: absolute;
     border-radius: 50%;
     background-color: blue;
@@ -115,13 +124,18 @@
     left: 40px;
 }
 
-marquee span {
-    margin-right: 60px;
-}
+marquee {
+    span { margin-right: 60px; }
+    font-family: 'Quran-surah-font';
+    }
+
+
 
 .months {
-    grid-area: 4 / 5 / 1 / 13;
+    grid-area: 1 / 12 / 2 / 13;
     #1, #7, #11, #12 {
         color: red;
     }
 }
+
+
